@@ -1,3 +1,26 @@
+/* Width of the scrollbar */
+::-webkit-scrollbar {
+  width: 2px;  /* Vertical scrollbar width */
+  height: 2px; /* Horizontal scrollbar height */
+}
+
+/* Scrollbar track (the background) */
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+/* Scrollbar handle (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: #04ffff;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #52d9ff;
+}
+
 /* General styling */
 .app-container {
   background: url(https://i.pinimg.com/originals/44/6e/3b/446e3b79395a287ca32f7977dd83b290.jpg);
@@ -7,7 +30,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  /* padding: 20px; */
   overflow: hidden;
 }
 
