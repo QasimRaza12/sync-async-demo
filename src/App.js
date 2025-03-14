@@ -193,6 +193,13 @@ function App() {
           <div className={asyncTime && "btn btn-async"}>{asyncTime && <p>{asyncTime} ms</p>}</div>
         </div>
 
+        {/* Loading indicator */}
+        {isDownloading && (
+          <div className="loading">
+            <p>Downloading...</p>
+            <div className="spinner"></div>
+          </div>
+        )}
         {/* List of links with status */}
         <div className="link-container">
         <ul className="link-list">
@@ -260,13 +267,7 @@ function App() {
         </ul>
         </div>
 
-        {/* Loading indicator */}
-        {isDownloading && (
-          <div className="loading">
-            <p>Downloading...</p>
-            <div className="spinner"></div>
-          </div>
-        )}
+        
       </div>
     </div>
   );
