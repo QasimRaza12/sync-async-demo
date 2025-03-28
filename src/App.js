@@ -183,7 +183,7 @@ function App() {
             disabled={isDownloading}
             className={`btn ${isDownloading ? "btn-disabled" : "btn-async"}`}
           >
-            Async Download
+            Parallel Download
           </button>
         </div>
 
@@ -196,7 +196,6 @@ function App() {
         {/* Loading indicator */}
         {isDownloading && (
           <div className="loading">
-            <p>Downloading...</p>
             <div className="spinner"></div>
           </div>
         )}
